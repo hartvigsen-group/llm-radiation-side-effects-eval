@@ -50,5 +50,38 @@ export AZURE_OPENAI_API_KEY="your-key-here"
 export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
 export AZURE_OPENAI_DEPLOYMENT="your-deployment-name"
 ```
+## Usage
+
+### Step 1 — Generate profiles
+```bash
+python code/perturb_profiles.py
+```
+
+### Step 2 — Generate model responses
+
+For HuggingFace models (LLaMA, Gemma, Mistral, Qwen, Phi):
+```bash
+python code/huggingface_generate_responses.py
+```
+Set `model_name` at the top of the script to your chosen HuggingFace model ID.
+
+For Azure OpenAI models (o4-mini, GPT-5):
+```bash
+python code/azure_openai_generate_responses.py
+```
+
+### Step 3 — Evaluate responses
+```bash
+python code/evaluation_metrics.py
+```
+Outputs:
+- `results/side_effect_metrics.csv` — Precision, recall, F1 per response
+- `results/overlap_metrics.csv` — Pairwise overlap between base and specified profiles
+
+### Step 4 — Recall by frequency and temporal onset
+```bash
+python code/recall_prevalence_onset.py
+```
+Outputs `results/recall_by_commonness.csv`.
 
 
