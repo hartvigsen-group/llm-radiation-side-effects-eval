@@ -31,3 +31,24 @@ ground truth reference.
   - Breast and Nodes
   - Breast Only
 
+## Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com//breast-cancer-radiation-llm.git
+cd breast-cancer-radiation-llm
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set environment variables (for Azure OpenAI scripts)
+```bash
+export AZURE_OPENAI_API_KEY="your-key-here"
+export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
+export AZURE_OPENAI_DEPLOYMENT="your-deployment-name"
+```
+
+
