@@ -14,8 +14,8 @@ ground truth reference.
   without specifying type or anatomical location
 - **Specified profiles**: The same 21 profiles with a specific radiation 
   type/location appended (e.g., "radiation (chest wall and nodes)")
-- Profiles are sourced from [AIME](https://arxiv.org/abs/2411.03395) (18 profiles) 
-  and [OncQA](https://arxiv.org/abs/2308.03853) (3 profiles), normalized into 
+- Profiles are sourced from [AIME](https://arxiv.org/abs/2411.03395)
+  and [OncQA](https://arxiv.org/abs/2310.17703), normalized into 
   a shared EHR-style format
 
 ### Ground Truth Side-Effect Reference
