@@ -75,13 +75,13 @@ python code/azure_openai_generate_responses.py
 python code/evaluation_metrics.py
 ```
 Outputs:
-- `results/side_effect_metrics.csv` — Precision, recall, F1 per response
-- `results/overlap_metrics.csv` — Pairwise overlap between base and specified profiles
+- `side_effect_metrics.csv` — Precision, recall, F1 per response
+- `overlap_metrics.csv` — Pairwise overlap between base and specified profiles
 
 ### Step 4 — Recall by frequency and temporal onset
 ```bash
 python code/recall_prevalence_onset.py
 ```
-Outputs `results/recall_by_commonness.csv`.
+Outputs `recall_by_commonness.csv`.
 
 
